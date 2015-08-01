@@ -1,0 +1,34 @@
+<ion-view title="Settings">
+<div class="background-op"></div>
+  <ion-content class="has-header padding" has-bouncing="true">
+      <form ng-submit="processForm()" style="margin-top: 10px;">
+
+          <a class="item item-icon-left setting-item" href="#/tab/account/profile">
+            <i class="icon ion-person-stalker"></i>
+              Profile
+            <span class="item-note">
+              Edit
+            </span>
+            </a>
+
+            <a class="item item-icon-left setting-item" href="#/tab/account/reset">
+            <i class="icon ion-settings"></i>
+              Password Management
+            </a>
+          <div ng-if="!show_guest_account_toggle">
+            <ion-toggle class="setting-item" ng-model="enablePushNotifications.checked" ng-change="pushNotificationChange()">
+              Enable Push Notifications
+            </ion-toggle>                                           
+          </div>
+          </ion-scroll>
+          <div style="clear:both;"></div>
+
+          
+
+          <div class="padding" style="padding-left: 0px; padding-right: 0px; margin-top: 15px; margin-bottom: 65px;">
+            <button type="submit" class="button button-block button-positive" style="margin: 0px;">Save</button>
+          </div>  
+          <br/>
+      </form>   
+  </ion-content>
+</ion-view>

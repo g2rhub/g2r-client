@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, height=device-height, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-cookies.js"></script>
+
+    <!-- Xelita -->
+    <script src="lib/xelita/cordovaDeviceModule.js"></script>
+    <script src="lib/xelita/cordovaDeviceMotionModule.js"></script>
+    <script src="lib/xelita/cordovaNetworkInformationModule.js"></script>
+    <script src="lib/xelita/cordovaVibrationModule.js"></script>
+    <script src="lib/xelita/cordovaGeolocationModule.js"></script>
+
+
+    <script src="lib/ng-cordova.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- fb .js -->
+    <script src="lib/fb/openfb.js"></script>
+    <script src="lib/fb/ngopenfb.js"></script>
+
+    <!-- your app's js -->
+    <script src="modules/app/util.js"></script>
+    <script src="modules/app/app.js"></script>
+    <script src="modules/app/controllers.js"></script>
+    <script src="modules/app/services.js"></script>
+    <script src="modules/app/URLs.js"></script>
+
+
+    <!-- session helper -->
+    <script src="modules/session/session.service.js"></script>
+
+    <!-- landing page module -->
+    <script src="modules/landing/landingpage.controller.js"></script>
+
+    <!-- user module -->
+    <script src="modules/user/user.service.js"></script>
+    <script src="modules/user/userRegister.controller.js"></script>
+
+    <!-- settings module -->
+    <script src="modules/settings/userAccount.controller.js"></script>
+    <script src="modules/settings/userProfile.controller.js"></script>
+    <script src="modules/settings/verification.service.js"></script>
+
+    <!-- Sign up module -->
+    <script src="modules/signup/signup.controller.js"></script>
+
+    <!-- Login module -->
+    <script src="modules/login/login.controller.js"></script>
+    <script src="modules/login/login.service.js"></script>
+
+    <!-- dashboard module -->
+    <script src="modules/dashboard/dashboard.controller.js"></script>
+
+    <!-- retailer module -->
+    <script src="modules/retailer/retailers.service.js"></script>
+
+    <!-- card module -->
+    <script src="modules/card/card.service.js"></script>
+    <script src="modules/card/cardDetail.controller.js"></script>
+
+    <!-- offer module -->
+    <script src="modules/offer/offer.service.js"></script>
+    <script src="modules/offer/offer.controller.js"></script>
+
+    <!-- location module -->
+    <script src="modules/location/location.service.js"></script>
+
+    <!-- ad module -->
+    <script src="modules/ad/ad.service.js"></script>
+
+    <!-- util module -->
+    <script src="modules/util/util.service.js"></script>
+
+    <!-- analytics module -->
+    <script src="modules/analytics/analytics.service.js"></script>
+
+  </head>
+  <body ng-app="starter" class="platform-cordova platform-ios platform-ios7" animation="slide-left-right-ios7">
+    <!-- 
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7 header-bar">
+      <ion-nav-back-button class="button-icon icon ion-chevron-left">
+        Back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!-- 
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

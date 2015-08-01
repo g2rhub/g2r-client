@@ -1,0 +1,40 @@
+<ion-view title="Settings">
+<div class="background-op"></div>
+  <ion-content class="has-header padding" has-bouncing="true">
+    <ion-nav-buttons side="right">
+      <button class="button link-button" ng-click="startEditing()" ng-hide="isEditing">Edit</button> 
+    </ion-nav-buttons>
+      <form ng-submit="processForm()" style="margin-top: 10px;" class="update-form">
+
+          <a class="profile-avatar" href="#">
+            <img src="img/avatar.png" class="profile-avatar-img">
+            <h2>{{formData.firstName}} {{formData.lastName}}</h2>
+          </a>
+          <ion-scroll>
+          <div class="item item-input item-stacked-label inline-text-parent">
+            <span class="input-label label-high">Email</span>
+            <label class="item item-input" ng-show="isEditing">
+              <input type="email" placeholder="{{formData.email}}" ng-show="isEditing"/>
+            </label>
+            <span class="inline-text-right" ng-if="formData.is_email_verified">Verified</span>
+            <span class="inline-text-right" ng-if="!formData.is_email_verified" ng-click="verifyEmail()">Verify</span>
+            <p class="profile-label" ng-hide="isEditing">{{formData.email}}</p>
+          </div>
+          <div class="item item-input item-stacked-label inline-text-parent">
+            <span class="input-label label-high">Mobile #</span>
+            <label class="item item-input" ng-show="isEditing">
+              <input type="email" placeholder="{{formData.mobile}}"/>
+            </label>
+            <span class="inline-text-right" ng-if="formData.is_mobile_verified">Verified</span>
+            <span class="inline-text-right" ng-if="!formData.is_mobile_verified" ng-click="verifyMobile()">Verify</span>
+            <p class="profile-label" ng-hide="isEditing">{{formData.mobile}}</p>
+          </div>
+          
+          </ion-scroll>
+          <div style="clear:both;"></div>
+          <button ng-show="isEditing" class="button button-block button-positive" type="submit">Update</button> 
+
+      </form>   
+      <button ng-show="isEditing" class="button button-block button-assertive" ng-click="cancelEdit()">Cancel</button> 
+  </ion-content>
+</ion-view>

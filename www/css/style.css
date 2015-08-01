@@ -1,0 +1,313 @@
+/* Empty. Add your own CSS if you like */
+
+.button-retailer{
+    
+    padding: 15px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    color: white !important;
+    border-radius: 10px;
+}
+.mobile-code-select {
+  margin-right: 20px;
+    border: none;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.mobile-phoneCode-span {
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: monospace;
+}
+.mobile-no-p {
+  padding-left: 30px;
+}
+.title-img {
+    position: absolute;
+  left: 12%;
+  transform: rotate(-30deg);
+}
+
+.button.button-icon {
+      color: lightgray !important;
+}
+
+.item-input{
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.item-input input {
+      color: white;
+}
+
+.link-button {
+    background: transparent !important;
+  color: #E9EAEF !important;
+  border: none !important;
+  font-size: 16px !important;
+}
+
+.retailer_img {
+    	-moz-border-radius: 8px;
+    	-webkit-border-radius: 8px;
+    	border-radius: 8px;
+        height : 60px;
+        width : 100px;
+}
+.landing-header {
+  background: rgba(0,0,0,0.3);
+    color: white;
+}
+
+.landing-title {
+      background: brown;
+    margin-top: 10px;
+    z-index: 999;
+    text-align : center;
+    font-family : cursive;
+    font-size : 18px;
+}
+
+.landing-option-buttons {
+        position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: inline;
+}
+
+.landing-option-buttons a {
+    
+    display: inline-block;
+    text-decoration: none;
+    width: 36%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    background: rgb(9, 125, 93);
+    box-shadow: 0px 2px 4px 0px black;
+}
+
+
+.app-boldc-text{
+      padding: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+}
+.landing-page-main-img {
+  width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px -5px black;
+        margin-top: 5px;
+}
+
+.app-features {
+      width: 100%;
+    padding: 25px;
+    padding-right: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+        text-align: center;
+}
+
+.app-features p {
+  font-size : 24px;
+  font-family: cursive;
+  padding-bottom : 10px;
+  border-bottom : 1px solid gray;
+}
+
+.app-features ul li {
+  font-family: cursive;
+  
+  line-height: 24px;
+  font-size : 12px;
+}
+
+
+
+.tabs {
+        background: rgba(126, 18, 18, 0.2);
+    height: 65px;
+    padding-top: 10px;
+    color: white;
+
+}
+
+.header-bar {
+  background: rgba(8, 3, 3, 0.25) !important;
+      border-bottom: 4px solid #F5F1F1;
+    height: 74px !important;
+}
+.bar.bar-stable .title {
+  color: #DBE6D7;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.label-high {
+      color: #CFD7DE !important;
+    margin-top: 5px;
+}
+/* Sign Up & Login form styles */
+.signup-form, .login-form {
+  margin : auto;
+  margin-top: 45px;
+  width:90%;
+}
+.signup-form .error-msg img, .login-form .error-msg img{
+  height: 35px;
+  position: absolute;
+  margin-top: -8px;
+}
+.signup-form .error-msg span, .login-form .error-msg span{
+  padding-left: 45px;
+}
+.signup-form .error-msg, .login-form .error-msg {
+  color: red;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.signup-form label, .login-form label {
+  
+  border: 1px solid rgb(194, 188, 188);
+  border-radius: 5px !important;
+  padding: 3px;
+  padding-left: 15px;
+  margin-bottom: 20px !important;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.update-form label {
+    border: 1px solid rgb(194, 188, 188);
+    border-radius: 5px !important;
+    padding: 3px;
+    padding-left: 15px;
+    margin-top: 5px !important;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 95%;
+}
+
+.setting-item {
+      background: none;
+    border: none;
+    color: white !important;
+}
+
+.update-form label input {
+  background: none;
+}
+
+.signup-form p, .login-form p {
+  text-align : left;
+  
+  margin-bottom: 20px !important;
+  color: white;
+}
+.signup-form .high-text {
+  color : blue;
+}
+
+.signup-form button, .login-form button {
+  color : white;
+  font-size : 1.2em;
+  background-color: #1D8268 !important;
+  
+}
+.inline-text-parent {
+  position: relative;
+}
+.inline-text-right {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  font-style: italic;
+  color: lightgray;
+}
+
+.background-op {
+  background-image: url('../img/back.png');
+    background-color: black;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: absolute;
+}
+
+.profile-label {
+    color: white !important;
+    font-size: 18px !important;
+    margin-top: 15px;
+}
+.profile-avatar {
+      background: none;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+}
+.profile-avatar-img {
+      width: 45%;
+    margin-left: 27%;
+    margin-top: 15px;
+}
+
+#social-links {
+    text-align: center;
+}
+
+#social-links ul li {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+#social-links ul li span.ifacebook,
+#social-links ul li span.itwitter,
+#social-links ul li span.igoogleplus {
+    display: inline-table;
+    width: 41px;
+    text-align: center;
+}
+#social-links ul li span.ifacebook { background: #354f88; padding: 10px 0 10px 0; }
+#social-links ul li span.itwitter { background: #40a2d1; padding: 10px 0 10px 0; }
+#social-links ul li span.igoogleplus { background: #ce3e26; padding: 10px 0 10px 0; }
+#social-links ul li a.afacebook,
+#social-links ul li a.atwitter,
+#social-links ul li a.agoogleplus {
+    display: inline-table;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    width: 78%;
+    text-align: center;
+}
+#social-links ul li a.afacebook { background: #3b5998; padding: 15px 0 10px 0; }
+#social-links ul li a.atwitter { background: #45b0e3; padding: 15px 0 10px 0; }
+#social-links ul li a.agoogleplus { background: #de4c34; padding: 15px 0 10px 0; }
+#social-links ul li a.afacebook:active { background: #354f88; }
+#social-links ul li a.atwitter:active { background: #40a2d1; }
+#social-links ul li a.agoogleplus:active { background: #ce3e26; }

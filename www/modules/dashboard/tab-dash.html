@@ -1,0 +1,69 @@
+<ion-view title="Add Card">
+<div class="background-op"></div>
+      <ion-content class="has-header padding" has-bouncing="true">
+        <div class="list" style="margin-top: 10px;">
+            <button class="button-retailer" data-ng-click="openSelectRetailer()">
+              <span ng-hide="retailer.name">Click to choose a Retailer</span>
+              <span ng-show="retailer.name">{{retailer.name}}</span>
+              <icon class="ion-chevron-down" style="float:right;"></icon>
+            </button>
+        
+        </div>
+        <form  ng-submit="processForm()" >
+        <div class="list" style="margin-top: -20px;">
+          <input type="hidden" ng-model="formData.user" value="{{user.username}}"/>
+          <input type="hidden" ng-model="formData.retailer" value="{{retailer.name}}"/>
+          <div  style="margin-bottom: 10px;">
+			      <label class="item item-input"><input  type="text" id="cardInput" pattern="\d*" placeholder="Card #" ng-model="formData.number" style="border: 0px; margin-top: 10px;" required /></label>	 
+          </div>
+          <div >
+			      <label class="item item-input"><input  type="text"  id="pinInput"  pattern="\d*" placeholder="Pin" ng-model="formData.pin"  style="border: 0px; margin-top: 10px; padding: 0px;" required /></label>
+          </div>  
+          <div >
+            <label class="item item-input"><input type="text" id="expDate" placeholder="Expiration Date"onfocus="this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();" ng-model="formData.expiration_date" style="border: 0px; margin-top: 10px; padding: 0px;" required /></label>
+          </div> 
+          <div >
+            <label class="item item-input"><input  type="text"  id="balanceInput"  pattern="\d*" placeholder="Balance on card" ng-model="formData.balance"  style="border: 0px; margin-top: 10px; padding: 0px;" required /></label>
+          </div> 
+        </div>
+		
+        <div class="padding" style="padding-left: 0px; padding-right: 0px; margin-bottom: 25px; margin-top: -20px;">
+	        <button class="button button-block button-positive" type="button" ng-click="scanBarcode()" style="width: 49%; float:left;">Scan Card</button>
+          <button class="button button-block button-positive" type="submit" style="width: 49%; float:right; margin-top: -57px;">Add Gift Card</button>
+          <div style="clear: both" />
+        </div>
+      </form>
+	    <div ng-if="cardsTitlePortfolioToggle">
+		    <h4 id="myCardPortfolioTiltle">My card portfolio</h4>
+	    </div>
+      <ion-list>
+        <ion-item ng-repeat="card in cards track by $index" type="item-text-wrap" ng-click="selectCard(card)">
+         <ion-item ng-repeat="retailer in retailers track by $index" type="item-text-wrap" ng-click="selectCard(card)">
+          <img class="retailer_img" ng-src="{{retailer.logo}}" style="display: block; float: left;"/>
+          
+          <div style="float: left; margin-left: 25px; font-weight: bold; padding:20px;">${{cardbalance}}</div>
+          <span class="badge badge-assertive" style="float: right;">{{card.num_offers}}</span>
+          </ion-item>
+        </ion-item>
+      </ion-list>     
+      <br/>     
+      <br/>
+    </ion-content>
+    <script id="select-retailer.html" type="text/ng-template">
+    <div class="modal">
+      <ion-header-bar class="bar-secondary">
+        <h1 class="title">Select Retailer</h1>
+        <button class="button button-clear button-positive" ng-click="closeSelectRetailer()">Cancel</button>
+      </ion-header-bar>
+      <ion-content>
+        <div class="list">
+          <label class="item item-radio" ng-repeat="retailer in retailers" ng-click="setRetailer(retailer)">
+            <input type="radio" name="group" />
+            <div class="item-content"><img class="retailer_img" ng-src="{{retailer.logo}}"></div>
+          </label>
+        </div>      
+      </ion-content>
+    </div>
+  </script>
+</ion-view>
+

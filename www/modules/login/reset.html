@@ -1,0 +1,29 @@
+<ion-view title="Reset Password">
+<div class="background-op"></div>
+  <ion-content has-header="true" class="has-header padding">
+    <form class="signup-form" ng-submit="resetPassword()">
+      <p ng-show="error" class="error-msg"><img src="img/error.png"/><span>{{error}}</span></p>
+      <div ng-hide="otpVerified">
+        <label class="item item-input">
+          <input type="text" ng-model="user.identifier" placeholder="Mobile Number / Email" required />
+        </label>
+        <label class="item item-input" ng-show="otpSent">
+          <input type="text" ng-model="user.otp" placeholder="Enter OTP received" required />
+        </label>
+        <button ng-show="otpSent" class="button button-block button-balanced" type="button" ng-click="verifyOTP()">Verify OTP</button>
+        <button class="button button-block button-positive" type="button" ng-click="generateOTP()">Generate OTP</button>
+        
+      </div>
+      <div ng-show="otpVerified">
+        <label class="item item-input">
+          <input type="password" ng-model="user.password" placeholder="New Password" required />
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="user.password1" placeholder="Confirm New Password" required />
+        </label>
+        <button class="button button-block button-positive" type="submit">Reset Password</button>
+      </div>
+      <button class="button button-block button-assertive" type="button" ng-click="go()">Cancel</button>
+    </form>
+  </ion-content>
+</ion-view>

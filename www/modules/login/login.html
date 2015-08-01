@@ -1,0 +1,30 @@
+
+<ion-view title="Gift2Redeem Login">
+<div class="background-op"></div>
+	<ion-content has-header="true" class="has-header padding">
+
+		<form class="login-form" ng-submit="login(user)">
+			<p ng-show="error" class="error-msg"><img src="img/error.png"/><span>{{error}}</span></p>
+			<label class="item item-input">
+				<input type="text" ng-model="user.id" placeholder="Mobile Number or Email" required />
+			</label>
+			<label class="item item-input">
+				<input type="password" ng-model="user.password" placeholder="Password" required />
+			</label>
+			<p style="text-align:right;" ng-click="goToForgotPasswordPage()">Forgot Password?<br>
+			Create a new Password</p>
+			<button class="button button-block button-positive" type="submit">Login</button>
+			<p style="text-align:center">Don't have an account ? <a href="#/register">Sign Up here</a></p>
+ 		</form>
+ 		<label class="">
+    		<div class="login-btns">
+            	<div id="social-links">
+                	<ul>
+                    	<li ng-click="fbLogin()"><span class="ifacebook"><img src="img/social-icons/facebook.png"></span><a href="#" class="afacebook">sign in with facebook</a></li>
+                    	<li ng-click="gplusLogin()"><span class="igoogleplus"><img src="img/social-icons/googleplus.png"></span><a href="#" class="agoogleplus">sign in with google+</a></li>
+                	</ul>
+            	</div>
+        	</div>
+		</label>
+	</ion-content>
+</ion-view>
